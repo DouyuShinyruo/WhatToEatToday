@@ -1,0 +1,35 @@
+<!--pages/about/about.wxml-->
+<import src="../../wxss/dist/capsule/index.wxml" />
+
+<view class='container'>
+  <view class="zan-panel-title">关于软件</view>
+  <view class="zan-panel panel-custom  zan-panel--without-border">
+    <view class='p-custom'>这里应该写点啥。以后再写。</view>
+    <view class='p-custom'>
+      Based on：
+      <template is="capsule" data="{{ leftText: '微信', rightText: '微信小程序', color:'#62b900' }}" />
+      <template is="capsule" data="{{ leftText: 'VUE', rightText: 'ZanUI-VUE2.0', type: 'danger' }}" />
+    </view>
+  </view>
+  <view class="zan-panel-title">关于作者</view>
+  <view class="zan-panel panel-author zan-panel--without-border">
+    <view class="userinfo">
+      <block>
+        <image class="userinfo-avatar" src="./img/avatar.jpeg" background-size="cover"></image>
+        <text class="userinfo-nickname">Otto</text>
+        <text class="author-info">其实我不是一个程序员。</text>
+        <view class="zan-row">
+        </view>
+        <view class="zan-col zan-col-4" data-index="0" bindtap='copy'>
+          <image class='icon' src="./img/icon/gmail.png" background-size="cover"></image>
+        </view>
+        <!-- <view class="zan-col zan-col-4" data-index="1" bindtap='copy'>
+          <image class='icon' src="./img/icon/github.png" background-size="cover"></image>
+        </view>
+        <view class="zan-col zan-col-4" data-index="2" bindtap='copy'>
+          <image class='icon' src="./img/icon/zhihu.png" background-size="cover"></image>
+        </view> -->
+      </block>
+    </view>
+  </view>
+</view>
